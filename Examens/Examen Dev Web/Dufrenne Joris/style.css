@@ -1,0 +1,128 @@
+/* importation police */
+@font-face {
+    font-family: Victorian;
+    src: url(fonts/VictorianDecade.otf);
+}
+
+/* formatage de base */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: victorian;
+    color: #ffffff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #312332;
+    font-size: xx-large;
+}
+
+nav h1{
+    padding: 30px;
+}
+
+nav ul{
+    display: flex;
+    min-width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    padding: 20px;
+}
+
+nav a:hover{
+    background-color: #000000;
+    color: #fe2e23;
+}
+
+header{
+    min-height: 100vh;
+    background-image: url(img/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header div{
+    max-width: 30%;
+    padding: 3%;
+    text-align: right;
+}
+
+header div h2{
+    font-size: 500%;
+}
+header div h3{
+    font-size: 300%;
+}
+
+header div p{
+    font-family: Calibri, sans-serif;
+    font-size: x-large;
+}
+
+/* respponsive texte header */
+@media screen and (max-width: 1080px) {
+    header{
+        min-height: 90vh;
+        align-items: flex-end;
+    }
+
+    header div{
+        max-width: 100%;
+        padding: 10%;
+        text-align: left;
+    }
+
+    header div h2{
+        font-size: 400%;
+    }
+    header div h3{
+        font-size: 300%;
+    }
+    
+    header div p{
+        font-size: large;
+    }
+}
+
+/* responsive menu */
+
+@media screen and (max-width: 800px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav h1{
+        padding: 30px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        flex-direction: column;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li:hover{
+        background-color: #000000;
+        color: #fe2e23;
+    }
+    
+}
